@@ -2,7 +2,7 @@
 
 This script removes numbered files and related kinds of archive files.
 
-TThis deletes files with names that end in a separator then number:
+This deletes files with names that end in a separator then number:
 
   * foo.1, foo-2, foo_3, etc.
 
