@@ -2,10 +2,6 @@
 
 This script removes numbered files and related kinds of archive files.
 
-This deletes files with names that end in a separator then number:
-
-  * foo.1, foo-2, foo_3, etc.
-
 Syntax:
 
     rm-numbered-files [dir]
@@ -17,6 +13,13 @@ Example to do the current directory:
 Example to do a specific directory:
 
     rm-numbered-files /foo/goo
+
+
+## Which files?
+
+This deletes files with names that end in a separator then number:
+
+  * foo.1, foo-2, foo_3, etc.
 
 The file name separator can be a period, dash, or underscore.
 
