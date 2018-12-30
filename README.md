@@ -2,6 +2,17 @@
 
 This script removes numbered files and related kinds of archive files.
 
+Contents:
+
+* [Introduction](#introduction)
+* [Which files?](#which-files)
+* [Related](#related)
+* [Compatibility notes](#compatibility-notes)
+* [Tracking](#tracking)
+
+
+## Introduction
+
 Syntax:
 
     $ rm-numbered-files [dir]
