@@ -4,15 +4,15 @@ This script removes numbered files and related kinds of archive files.
 
 Syntax:
 
-    rm-numbered-files [dir]
+    $ rm-numbered-files [dir]
 
 Example to do the current directory:
 
-    rm-numbered-files
+    $ rm-numbered-files
 
 Example to do a specific directory:
 
-    rm-numbered-files /foo/goo
+    $ rm-numbered-files /foo/goo
 
 
 ## Which files?
@@ -29,8 +29,11 @@ The file name separator can be a period, dash, or underscore.
 These scripts are for related purposes:
 
   * [rm-compressed-files](https://github.com/SixArm/rm-compressed-files)
-  * [rm-datestamped-files](https://github.com/SixArm/rm-datestamped-files)
+
+  * [rm-dated-files](https://github.com/SixArm/rm-dated-files)
+
   * [rm-numbered-files](https://github.com/SixArm/rm-numbered-files)
+
   * [rm-rotated-files](https://github.com/SixArm/rm-rotated-files)
 
 
@@ -50,9 +53,11 @@ We prefer to be more compatible rather than system-specific.
 ## Tracking
 
   * Command: rm-numbered-files
-  * Version: 3.0.0
+  * Website: http://sixarm.com/rm-numbered-files
+  * Cloning: https://github.com/sixarm/rm-numbered-files
+  * Version: 4.0.0
   * Created: 2013-12-09
-  * Updated: 2017-08-29
+  * Updated: 2019-01-01
   * License: GPL
   * Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
-
+  * Tracker: 7f2b1f4ed3481e5912a9f4e5f5a92a34
