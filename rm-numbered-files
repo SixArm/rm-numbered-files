@@ -21,9 +21,11 @@ set -euf
 #
 # This deletes files with names that end in a separator then number:
 #
-#   * foo.1, foo-2, foo_3, etc.
+#   * foo.1, foo-1, foo_1, foo=1, foo~1, etc.
 #
-# The file name separator can be a period, dash, or underscore.
+# The file name separator can be any of:
+#
+#   * period, dash, underscore, equal, tilde.
 #
 #
 # ## Compatibility notes:
@@ -44,9 +46,9 @@ set -euf
 #   * Command: rm-numbered-files
 #   * Website: http://sixarm.com/rm-numbered-files
 #   * Cloning: https://github.com/sixarm/rm-numbered-files
-#   * Version: 4.0.1
+#   * Version: 4.1.1
 #   * Created: 2013-12-09
-#   * Updated: 2019-09-08
+#   * Updated: 2019-09-09
 #   * License: GPL
 #   * Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
 #   * Tracker: 7f2b1f4ed3481e5912a9f4e5f5a92a34
@@ -54,5 +56,5 @@ set -euf
 
 find "${1:-.}" \
      -type f \
-     -regex ".*[-\.][0123456789][0123456789]*" \
+     -regex ".*[-\_\=\.\~][0123456789][0123456789]*" \
      -exec rm {} \;
